@@ -1,39 +1,140 @@
-.App {
-  text-align: center;
+/* styling App.js */
+/* Import the Poppins font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* Reset default styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; /* Use Poppins font throughout */
+}
+/* Remove default body margin */
+body {
+  margin: 0; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header section styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #b2cde0; 
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Hamburger menu styling */
+.hamburger-icon {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  gap: 7px;
+  padding-left: 45px;
 }
 
-.App-link {
-  color: #61dafb;
+.burger {
+  width: 25px;
+  height: 3px;
+  background-color: #333; 
+  transition: all 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.burger1.open {
+  transform: rotate(45deg) translate(5px, 5px);
 }
+
+/* Hide the middle burger line when open */
+.burger2.open {
+  opacity: 0; 
+}
+
+.burger3.open {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Logo image styling */
+.header img {
+  height: 100px;
+  width: 315px;
+  background-color: transparent;
+  padding-left: 200px;
+}
+
+/* Logo text styling */
+.logo-title {
+  font-family: "Pacifico", cursive;
+  font-size: 4em;
+  color: #ff9800; 
+  text-align: right;
+  padding-right: 350px;
+}
+
+/* Search bar styling */
+.search-bar {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd; 
+}
+
+/* Navigation menu styling */
+.nav-menu {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  background-color: #f9d553; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Styling list inside navigation menu */
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  padding: 8px 0;
+  text-align: left;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #333; 
+  font-weight: bold;
+}
+
+.nav-menu li a:hover {
+  color: #ff9800; 
+}
+
+/* Styling for Hero component section */
+section {
+  padding: 20px;
+  margin-top: 45px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-photo {
+  max-width: 760px;
+  align-self: center; 
+}
+
+.hero-header {
+  margin-bottom: 16px;
+}
+
+.hero-text {
+  margin-top: 0;
+}
+
+
+
+
 
