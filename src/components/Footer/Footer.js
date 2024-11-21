@@ -41,13 +41,26 @@ function Footer() {
           </ul>
         </div>
         <div className="links-col">
-          <h4>Follow us on:</h4> {/* Links to social media profiles */}
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
-          <a href="#">Snapchat</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">TikTok</a>
+          <h4>Follow us on:</h4>
+          {/* Links to social media profiles */}
+          <a href="https://www.facebook.com/fakeprofile" target="_blank">
+            Facebook
+          </a>
+          <a href="https://twitter.com/fakeprofile" target="_blank">
+            Twitter
+          </a>
+          <a href="https://www.instagram.com/fakeprofile" target="_blank">
+            Instagram
+          </a>
+          <a href="https://www.snapchat.com/add/fakeprofile" target="_blank">
+            Snapchat
+          </a>
+          <a href="https://www.linkedin.com/in/fakeprofile" target="_blank">
+            LinkedIn
+          </a>
+          <a href="https://www.tiktok.com/@fakeprofile" target="_blank">
+            TikTok
+          </a>
         </div>
         <div className="news-col">
           <h4>Newsletter</h4> {/* Newsletter subscription form */}
